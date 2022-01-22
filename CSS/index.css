@@ -1,0 +1,53 @@
+.imgbox {
+     display: grid;
+     height: 100%;
+    }
+
+.bg {
+       position: fixed;
+       margin-top: 0;
+       margin-left: 0;
+       min-width: 100%;
+       min-height: 100%;
+}
+
+.startButton {
+    position: relative;
+    top: 50vh;
+    left: 50vh;
+    transform: translate(-50vh, -10vh);
+    color: #232936;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    transition: 0.5s;
+}
+
+.startButtonDescript {
+    position: relative;
+    top: 90vh;
+    left: 50vh;
+    transform: translate(-50vh, -48vh);
+    color: #585f6e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vh;
+}
+
+a {
+    color: #232936;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #2e4880;
+    transition: 0.5s;
+}
+
+.startButton:hover{
+	font-size: 6vh;
+    transition: 0.5s;
+}
+
+.special{
+margin-top: 100vh;
+}

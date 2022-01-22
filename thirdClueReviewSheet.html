@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Clue 3 Review Sheet</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="CSS/reviewsheets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/generalFormatting.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+
+    <style>
+    .words {
+    transform: translate(0, -0.7%);
+}
+</style>
+</head>
+
+<body class = "startBody">
+<hr class = "top">
+<hr class = "banner">
+
+<div class = "backbutton">
+        <span title = "Return to previous page">
+        <a href ="thirdClue.html">
+        <img src="Images/backButton2.png" style="width:5%" alt="back button icon">
+        </a>
+        </span>
+</div>
+
+<h1>Trigonometry (Advanced Functions) & Rates of Change</h1>
+<h2>Chapter 2, 6, 7 Advanced Functions Review</h2>
+
+<!-- Start of review -->
+<div class = "words">
+    <p class = "header1">
+        Trigonometric Functions
+    </p>
+    <p class = "header2">
+        Radians
+    </p>
+    <p class = "info">
+                Like degrees, radians can be used to represent an angle. Unlike degrees, radians do not require a unit of measurement! <br><br>
+
+        To convert between radians and degrees, one can use the formula θ = a/r, where theta represents the angle, a represents the arc that subtends
+        the angle, and r represents the radius of the circle. An image of these terms are represented below.
+    </p>
+    <img src="./Images/6.1AFcircle.PNG" alt = "image of terms" width = 20%>
+    <p class = "info">
+        360<sup>o</sup> is equivalent to 2π. This also makes sense when you think about it since the circumference of a circle is equivalent to
+        2πr and if the radius is 1, then the circumference of a circle is equivalent to 2π. 1 radian is equivalent to approximately 57.3<sup>o</sup>.<br><br>
+
+        Note that when working with radians, you should make sure that your calculator is in <b>RADIANS</b> mode.
+    </p>
+
+    <p class = "header2">
+        Radians on the Unit Circle
+    </p>
+    <p class = "info">
+        Take a look at this unit circle, updated now with supercalifragilisticexpialidocious radians! :D
+    </p>
+    <img src="./Images/radiansUnitCircle.PNG" alt = "unit circle with radians" width = 40%>
+
+    <p class = "header2">
+        Transformation of Trigonometric Functions
+    </p>
+    <p class = "info">
+        This is literally the same as previous trigonometric problems, except instead of working with degrees, you work with radians. For instance, instead of 360<sup>o</sup>|k| giving you the period, it's now 2π/|k|!<br><br>
+
+        In case you forgot how transformations work, take a look at the summary chart below.
+        They apply to the equations f(x) = asin(k(x - d)) + c and f(x) = acos(k(x - d)) + c.
+    </p>
+    <img src="./Images/transformationChartRadians.png" alt = "transformation chart for radians" width = 50%>
+
+    <p class = "header2">
+        Exploring Tan
+    </p>
+    <p class = "info">
+        Tan, or tangent, is equivalent to opposite over adjacent. In the case of the unit circle, this is equivalent to the sin of
+        an angle over the cos of an angle (sin/cos). In a unit circle, tan tends to be that weird line hanging out around
+        the circumference of a circle, as shown below. Notice how it has the same slope as the red line (except it's opposite in sign)!
+    </p>
+    <img src="./Images/tan.png" alt = "tan" width = 40%>
+    <p class = "info">
+        The graph for tan is a lot weirder than sin or cos. It looks like this:
+    </p>
+    <img src="./Images/tanGraph.png" alt = "tan graph" width = 50%>
+    <p class = "info">
+        Think of spaghetti when you think of tan. There are a few key characteristics of f(x) = tan(x):
+        <li>The period is 180<sup>o</sup> or π</li>
+        <li>There is no amplitude, and therefore no max or min value</li>
+        <li>Domain is (-∞, +∞), but the graph has restrictions that cos(x) ≠ 0 (since tan is sin/cos and the
+            denominator cannot be equivalent to 0) which therefore makes the domain (-∞, +∞), as long as x ≠ π/2 + πn, n&isin;Z</li>
+            <li style="margin-left:2em">Vertical asymptotes at x = π/2 + πn, nEZ</li>
+        <li>Range is (-∞, +∞)</li>
+        <li>Zeros are located at 180<sup>o</sup>n, n&isin;Z (or πn, n&isin;Z)</li>
+    </p>
+    <p class = "info">
+        Transformations on tan are virtually the same as it is on sin or cos, at least
+        in terms of how it is drawn. Its transformation formula looks like f(x) = atan(k(x - d)) + c. The
+        only difference is with the a value, or the vertical stretch/compression. Now that the graph no
+        longer has an amplitude, you only really need to make the graph look thinner or wider (see below).
+    </p>
+    <img src="./Images/compare3graph.png" alt = "compare tan graph" width = 50%>
+
+    <p class = "header2">
+        Exploring Graphs of Reciprocal Trigonometric Functions
+    </p>
+    <p class = "info">
+        Before we continue, here's a really helpful image Khan Academy created to depict the basic trig ratios
+        and their reciprocals below on a single unit circle.<br>
+    </p>
+    <img src="./Images/recipAndRegTrig.png" alt = "khan academy reciprocal and regular trig ratios" width = 30%>
+    <p class = "info">
+        Now, let's dive into summaries of the properties of each graph cosecant, secant and cotangent!<br><br>
+        First up, cosecant or f(x) = csc(x):
+        <li>Vertical asymptotes where sin(x) = 0 (since csc(x) is 1/sin(x))</li>
+            <li style="margin-left:2em">Vertical asymptotes at x = πn, n&isin;Z</li>
+        <li>Period of 2π</li>
+        <li>Domain of (-∞, +∞), as long as x ≠ πn, n&isin;Z</li>
+        <li>Range is (-∞, +∞), but cannot be a value in between the max and min of sin(x) (in other words, |f(x)| ≥ 1</li>
+    </p>
+    <p class = "info">
+        Next is secant, or f(x) = sec(x):
+    <li>Vertical asymptotes where cos(x) = 0</li>
+    <li style="margin-left:2em">Vertical asymptotes at x = π/2 + πn, n&isin;Z</li>
+    <li>Period of 2π</li>
+    <li>Domain of (-∞, +∞), as long as x ≠ π/2 + πn, n&isin;Z</li>
+    <li>Range is (-∞, +∞), but cannot be a value in between the max and min of sin(x) (in other words, |f(x)| ≥ 1</li>
+    </p>
+    <p class = "info">
+        Finally, we have cotangent, or f(x) = cot(x):
+    <li>Vertical asymptotes where tan(x) = 0</li>
+    <li style="margin-left:2em">Vertical asymptotes at x = πn, n&isin;Z</li>
+    <li>Has zeros at the points where f(x) = tan(x) had asymptotes</li>
+    <li>Period of π</li>
+    <li>Domain of (-∞, +∞), as long as x ≠ πn, n&isin;Z</li>
+    <li>Range of (-∞, +∞)</li>
+    </p>
+    <img src="./Images/recipFunctionGraph.png" alt = "graphs of reciprocal functions" width = 60%>
+
+    <p class = "header1">
+        Trigonometric Identities & Equations
+    </p>
+    <p class = "header2">
+        Equivalent Trigonometric Functions
+    </p>
+    <p class = "info">
+        Welcome to the final review section for trigonometry!
+        When working with trigonometric functions, you may have noticed that the graphs are
+        continuous; they have one pattern that simply repeats over and over again, just at different x-coordinates.
+        Thus, it comes to no surprise that there can be multiple different equations that may represent one graph.
+        For instance, the graph of f(x) = sin(x) can also be represented by the cosine function shifted π/2 to the right
+        (resulting in f(x) = cos(x - (π/2))). This even works for equations such as f(x) = cos(-x) and f(x) = cos(x).
+    </p>
+    <img src="./Images/equivGraph.png" alt = "equivalent trig graphs" width = 20%>
+
+    <p class = "header2">
+        Compound Angle Formulas
+    </p>
+    <p class = "info">
+        Compound angles refer to angles that are created by adding or subtracting two or more angles together.
+    </p>
+    <img src="./Images/compoundAngle.png" alt = "compound angle formation" width = 25%>
+    <p class = "info">
+        Here is a list of the different compound angle formulas:
+    </p>
+    <img src="./Images/compoundAngleFormula.png" alt = "compound angle formula" width = 50%>
+
+    <p class = "header2">
+        Double Angle Formulas
+    </p>
+    <p class = "info">
+        These are simply more identities to add to your already long list of identities:
+    </p>
+    <img src="./Images/doubleAngleFormula.png" alt = "double angle formula" width = 50%>
+
+    <p class = "header2">
+        Proving Trig Identities
+    </p>
+    <p class = "info">
+        It is finally time for the moment we've all been waiting for, the moment in which you can <b>FINALLY</b> use all those
+        identities you've been collecting. Below is a summary image of all the identities covered thus far.
+    </p>
+    <img src="./Images/trigIdentities.png" alt = "trigonometric identities" width = 60%>
+    <p class = "info">
+        When a question asks you to prove an identity, it's merely asking to show that both sides of the identity
+        are equivalent to each other. In this case, it's often best to try to work with only one side of the identity
+        and manipulate it to achieve a value that is equivalent to the other side. An example of proving an identity is shown below:
+    </p>
+    <img src="./Images/proveExample.png" alt = "proving trig example" width = 60%>
+
+    <p class = "header2">
+        Solving Linear Trigonometric Equations
+    </p>
+    <p class = "info">
+        Let's say you have a ball that bounces up and down in a sinusoidal way. It continuously bounces off the ground to reach a height of 2 meters.
+        It completes a full bounce (from ground to the max height back to the ground) in 5 seconds. <br><br>
+        Now, given a time frame of 40 seconds and that the ball starts from the ground, how would you find out at what
+        times in this time interval was the ball at a height of 1 meter? This scenario is graphed below.
+    </p>
+    <img src="./Images/scenario7.5.png" alt = "graph example" width = 60%>
+    <p class = "info">
+        The above scenario is an example of when you would need to solve a linear trigonometric equation. <br><br>
+        For this particular problem, we are interested in the x-coordinate of every intersection point
+        between the linear graph and the sinusoidal one. An important thing to notice is that the intersection points are all a <b>half period</b> apart. <br><br>
+        In this given scenario, each period is 5 seconds, so each intersection point is 2.5 seconds apart! <br><br>
+        This information is useful since this means we only need to calculate when the first intersection point occurs!
+        Then the rest just involves adding 2.5 seconds to that first point, until you reach a value greater than or equal to 40. <br><br>
+
+        To solve for the first intersection point, you'd need to equate the equation of the linear function to the equation of the
+        sinusoidal function. <br><br>
+        The equation of the sinusoidal function is f(x) = -cos(2pi/5 * x) + 1. <br><br>
+        The equation of the linear function is g(x) = 1. <br><br>
+
+        Therefore, to equate the two functions I'd write 1 = -cos(2pi/5 * x) + 1, and solve for x! <br><br>
+
+        I'd end up with x = 1.25 as my first point, meaning I first hit a height of 1 meter at 1.25 seconds.
+        This is initially when the ball first starts bouncing upwards. I next hit the 1 meter mark as the ball falls back down,
+        at 1.25 + 2.5 = 3.75 seconds! To find the rest of the times, I'd keep at 2.5 seconds
+        to the previous times. Since we have a restriction of 40 seconds however,
+        I'd need to only consider the times that fall between 0 and 40 seconds for this question.
+    </p>
+
+    <p class = "header2">
+        Solving Quadratic Trigonometric Equations
+    </p>
+    <p class = "info">
+        In some cases, you may be forced to consider
+        the scenario when there are 2 possible answers. For instance, consider this equation:
+    </p>
+    <img src="./Images/quadTrig.png" alt = "quadratics and trig example" width = 20%>
+    <p class = "info">
+        You may notice that this is a quadratic equation, thus meaning, MULTIPLE ANSWERS! When working with trigonometric quadratic equations, <b>THERE ARE NOW 4 ANSWERS</b>! <br><br>
+
+        That's because it is possible for certain angles to have equivalent trig ratios (ie. sin(30<sup>o</sup>) = sin(150<sup>o</sup>)). Some things
+        are better shown than explained, so consider my solution for this question below.
+    </p>
+    <img src="./Images/quadTrigSol.png" alt = "quadratics and trig example solution" width = 70%>
+
+    <p class = "header1">
+        Rates of Change + Bonus: Induction
+    </p>
+
+    <p class = "header2">
+        Average Rate of Change (AROC)
+    </p>
+    <p class = "info">
+        The average rate of change is calculated by taking 2 points on a function and calculating the slope between those two points. In mathematical terms:
+    </p>
+    <img src="./Images/AROC.png" alt = "AROC example" width = "20%"><br>
+    <img src="./Images/AROCFormula.png" alt = "AROC formula" width = 30%>
+
+    <p class = "header2">
+        Estimating Instantaneous Rates of Change (IROC)
+    </p>
+    <p class = "info">
+        Estimating the instantaneous rate of change on a graph is very similar in nature to calculating the AROC between two points. Except instead of trying to find the rate of change between any two points on a graph, you're trying to find the rate of change at a single point on a graph. <br><br>
+
+        To find the slope at a single point, you need tangent lines, which are lines that touch a curve on a graph at only a single point. The slope of that tangent line will refer to the IROC at that point! An example of this idea is shown below.<br>
+    </p>
+    <img src="./Images/IROCimg.png" alt = "IROC example" width = "40%">
+    <p class = "info">
+        IROC focuses on finding the slope of that tangent line. However, simply trying to eyeball another point on the tangent to find its slope can become very inaccurate. So, instead of straining our eyes, why don't we simply choose another point that is SO close to the original point, they may as well be the same point? <br><br>
+        Consider (1, f(1)) and (1.01, f(1.01)). Aren't they really, really close together? The x coordinates only differ by 0.01! If we can find the slope between these 2 really close lines, we will actually be able to make the best possible guess on the IROC at that point! <br><br>
+        Notably, you don't need to use 0.01. You could also use 0.1 or 0.001 too; the smaller you go, the more accurate the IROC (but only go smaller if your calculator can handle it). Now, with estimating IROC, we have the equation:
+    </p>
+    <img src="./Images/IROCFormula.png" alt = "IROC formula" width = "35%">
+
+    <p class = "header2">
+        Rates of Change & Graphs
+    </p>
+    <p class = "info">
+        The idea of finding the IROC or AROC of something is especially applicable in the field of physics! However, since I don't want to try and teach a whole kinematics unit right now, I'll simply go over a few key ideas that AROC or IROC can indicate when imagining the graph the AROC or IROC is derived from.
+        <li>A positive rate of change indicates that the graph is moving in a positive direction (normally upwards)</li>
+        <li>A negative rate of change indicates that the graph is moving in a negative direction (normally downwards)</li>
+        <li>A constant rate of change indicates that the graph is linear</li>
+        <li>A rate of change of 0 indicates that the graph is a straight, horizontal line (between those points)</li>
+        <li>An undetermined rate of change indicates that the graph is a straight, vertical line (between those points)</li>
+    </p>
+
+    <p class = "header2">
+        Rates of Change in Trigonometric Functions
+    </p>
+    <p class = "info">
+        Good news! You don't have to learn anything new, since calculating the AROC or IROC on a trigonometric function uses the same formulas and ideas from the previous sections in this review. The only thing to keep in mind is that the IROC at each maximum and minimum point will always be 0.
+    </p>
+
+    <p class = "header2">
+        Mathematical Induction
+    </p>
+    <p class = "info">
+        Induction is a lot of things, but in math, it is a way to prove that any general statement P(n) will hold for every natural number (P(0), P(1), P(2), P(3), etc.).<br><br>
+
+        When trying to prove a statement via induction, you'll be working with 3 cases. <br><br>
+        
+        The first case, you will test if your statement works with the base case of 1. <br><br>
+        
+        Next, you will test if your statement works with the general term n (though this normally just involves rewriting the original statement, since it will usually be written with n anyways). <br><br>
+        
+        Then you will test if your statement works with the number after any general term n, or with n + 1! This idea of proving via induction is better shown with an example:
+    </p>
+    <img src = "./Images/induction.png" alt = "induction example" width = 40%>
+    <p class = "info">
+        Note: Example taken from in-class example.
+    </p>
+</div>
+<!-- End of review -->
+
+<div class = "special">
+    <footer>
+        <p>Website made entirely from scratch by Lily Phan :)</p>
+        <p class = "copyright"> Copyright &copy; 2022</p>
+    </footer>
+</div>
+</body>
+
+</html>

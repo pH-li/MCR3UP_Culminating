@@ -1,0 +1,81 @@
+.banner {
+    margin: 0px;
+    height: 40vh;
+    border: none;
+    background-color: #41246b;
+}
+.backbutton {
+    transform: translate(-47%, -350%);
+    margin-bottom: 0;
+}
+h1 {
+    position: relative;
+    margin-bottom: 0;
+    top: 2vh;
+    left: 50vh;
+    transform: translate(-50vh, -40vh);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vh;
+    transition: 0.5s;
+}
+
+h2 {
+        position: relative;
+        margin-bottom: 0;
+        top: 4vh;
+        left: 50vh;
+        transform: translate(-50vh, -38vh);
+        color: #d3c1de;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        transition: 0.5s;
+}
+
+.special{
+    margin-top: 0vh;
+}
+
+.header1 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 1.7vw;
+	padding-top: 2vh;
+	padding-bottom: 1.5vh;
+	padding-left: 6vw;
+	padding-right: 6vw;
+	line-height: 2rem;
+	font-weight: bold;
+	color: #162666; /* Blue colour*/
+}
+
+.info{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 1.3vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	line-height: 2rem;
+}
+
+.question{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 1.3vw;
+	padding-top: 1vh;
+	padding-bottom: 3vh;
+	padding-left: 12vw;
+	padding-right: 10vw;
+	line-height: 2rem;
+	color: #69031e;
+}
+li {
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 1.3vw;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	line-height: 2rem;
+}

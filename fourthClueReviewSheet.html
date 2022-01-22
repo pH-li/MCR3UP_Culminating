@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Clue 4 Review Sheet</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="CSS/reviewsheets.css">
+    <link rel="stylesheet" type="text/css" href="CSS/generalFormatting.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <style>
+    .words {
+    transform: translate(0, -1.5%);
+    }
+    </style>
+</head>
+
+<body class = "startBody">
+<hr class = "top">
+<hr class = "banner">
+
+<div class = "backbutton">
+        <span title = "Return to previous page">
+        <a href ="fourthClue.html">
+        <img src="Images/backButton2.png" style="width:5%" alt="back button icon">
+        </a>
+        </span>
+</div>
+
+<h1>Discrete Functions in Sequences, Series, & Finance</h1>
+<h2>Chapter 7 - 8 Functions Review</h2>
+
+<!-- Start of review -->
+<div class = "words">
+<p class = "header1">
+    Sequences & Series
+</p>
+    <p class = "header2">
+        Arithmetic Sequences
+    </p>
+    <p class = "info">
+        Finally, we've moved on from trigonometry! Wasn't that a pain? Anyways, there are a couple of important terms to review:<br>
+        <li><b>Sequence</b>: An ordered list of numbers (ie. 2, 4, 6, 8)</li>
+        <li><b>Term</b>: Any numeric value in a sequence. They can also be identified by their position in a sequence (ie. in the sequence 2, 4, 6, 8: t<sub>3</sub> refers to term 3, which has a value of 6)</li>
+        <li><b>Arithmetic Sequences</b>: A sequence that has a common difference between any pair of consecutive terms (ie. the common difference is 2 in the sequence 2, 4, 6, 8). These grow linearly.</li>
+            <li style="margin-left:2em">Note: Common differences can be found by calculating t<sub>n</sub> - t<sub>n - 1</sub>, where n can be any number in the sequence other than 1.</li>
+        <li><b>Recursive Sequence</b>: A sequence for which 1 or 2 initial terms are given and the successive terms' values depend on the initial terms (ie. if t<sub>3</sub> is equivalent to t<sub>2</sub>+ t<sub>1</sub>)</li>
+        <li><b>General Term</b>: A formula with the form of t<sub>n</sub> = function, where n refers to any term in a sequence and function refers to how each term is expressed as a function of its position.
+                                For instance, if a general term is t<sub>n</sub> = 5n, and you want to find the value of the 4th term, then you'd write t<sub>4</sub> = 5(4) = 20.</li>
+    <li style="margin-left:2em">All arithmetic sequences have a general term which can be defined by <b>t<sub>n</sub> = a + (n - 1)d</b>, where a is the first term and d is the common difference value and n&isin;N.</li>
+    </p>
+
+    <p class = "header2">
+        Geometric Sequences
+    </p>
+    <p class = "info">
+        Geometric sequences are very similar to arithmetic sequences, except these grow exponentially. Terms in a sequence are
+        linked together by a common ratio instead. For instance, a successive term may be achieved by multiplying the previous value by 6. <br><br>
+
+        The common ratio can be found by calculating t<sub>n</sub> / t<sub>n - 1</sub>, where n can be any number in the sequence other than 1. <br><br>
+
+        The general term of a geometric sequence can be defined by <b>t<sub>n</sub> = ar<sup>n - 1</sup></b>, where a refers to the first term and r refers to the common ratio value. <br><br>
+    </p>
+
+    <p class = "header2">
+        Recursive Sequences
+    </p>
+    <p class = "info">
+       For the purpose of this review, there are 2 main recursive sequences to review:<br>
+        <li><b>Fibonacci Sequence</b></li>
+            <li style="margin-left:2em"> Defined by the recursive formula t<sub>1</sub> = 1, t<sub>2</sub> = 1, t<sub>n</sub> = t<sub>n</sub> - 1 + t<sub>n</sub> - 2, where n&isin;N and n > 2 </li>
+        <li><b>Lucas Sequence</b></li>
+    <li style="margin-left:2em"> Defined by the recursive formula t<sub>1</sub> = 1, t<sub>2</sub> = 3, t<sub>n</sub> = t<sub>n</sub> - 1 + t<sub>n</sub> - 2, where n&isin;N and n > 2 </li>
+    </p>
+    <img src="./Images/fibPic.png" alt = "fibonacci sequence img" width = 50%>
+
+    <p class = "header2">
+        Arithmetic Series
+    </p>
+    <p class = "info">
+        Moving on from sequences, we have series: this refers to the sum of the terms in a sequence. An arithmetic series refers
+        to the sum of all the terms in an arithmetic sequence. If you only wanted to find the sum of the first n
+        terms in a sequence, that is considered a partial sum. <br><br>
+
+        To find this sum, you'd use the formula: <br>
+    </p>
+    <img src="./Images/arithemeticSeriesEquation.png" alt = "arith series equation" width = 20%>
+
+    <p class = "header2">
+        Geometric Series
+    </p>
+    <p class = "info">
+        This is essentially the same idea as arithmetic series, except now it will apply to a geometric sequence.
+        Notably, this geometric series equation will be very important in the financial math review section.<br><br>
+
+        This is the formula for the sum of arithmetic series: <br>
+    </p>
+    <img src="./Images/geometricSeriesEquation.png" alt = "geo series equation" width = 25%>
+
+    <p class = "header2">
+        Pascal's Triangle & Binomial Expansions
+    </p>
+    <p class = "info">
+        Ever looked at an expression such as (x + 4)<sup>7</sup> and thought <em>man that looks like a pain to expand.</em>
+        Well, continue thinking that--but now you can solve it a little more easily with a Pascal's Triangle trick!<br><br>
+
+        Recall what a Pascal's Triangle looks like:<br>
+    </p>
+    <img src="./Images/pascalTriangle.png" alt = "Pascal's Triangle" width = 40%>
+    <p class = "info">
+        The blue arrows represent which 2 numbers are added to create a number in the next row. Notice how all the "border" numbers on Pascal's Triangle are 1. <br><br>
+
+        When expanding any binomial,
+        the coefficients in the expansion correspond to the numbers in the nth row in Pascal's triangle. In the expansion,
+        the exponents of a start at n and decrease by 1 until it reaches 0, while the exponents of b start at 0 and increase by 1 up until n.
+        In other words (say that n is 4 for the sake of the example): <br>
+    </p>
+    <img src="./Images/pascalExample.png" alt = "Pascal's Example" width = 50%>
+    <p class = "info">
+        If you compare the blue numbers to the fourth row in Pascal's Triangle, you'll see that the numbers match up perfectly.
+        You may also notice that the exponents in red on all the a terms start at 4, and slowly reduce by 1. Comparatively, all the
+        exponents on the b terms in purple start at 0 before slowly increasing to 4.
+    </p>
+
+    <p class = "header1">
+        Financial Math
+    </p>
+    <p class = "header2">
+        Simple Interest
+    </p>
+    <p class = "info">
+        Here's some important definitions:
+        <li><b>Principal</b>: Represented by the letter P. Refers to the initial sum of money that is borrowed or invested</li>
+        <li><b>Interest</b>: Represented by the letter i. Refers to the money earned from an investment or the cost of borrowing money</li>
+        <li><b>Amount</b>: The total value of an investment or loan. Is equivalent to the sum of principal and interest</li>
+    </p>
+    <p class = "info">
+        Great! Now it's time to introduce simple interest, or money that grows linearly. With simple interest, the interest amount
+        is only calculated on the principal. <br><br>
+
+        The formula for calculating total amount on a value being charged simple interest is <b>F = P(1 + in),</b>
+        where F represents final amount, P represents principal amount, i represents interest rate,
+        and n represents amount of time elapsed (ie. 4 months). <br><br>
+        Note that this formula should only be used when you are NOT paying back or withdrawing money from the bank
+        throughout the time elapsed.
+    </p>
+
+    <p class = "header2">
+        Compound Interest: Future Value
+    </p>
+    <p class = "info">
+        With compound interest, the interest is paid differently
+        from simple interest in that the compound interest is calculated by applying the interest rate to the principal AND any
+        interest already earned. In other words, money will grow exponentially instead of linearly. <br>
+    </p>
+    <img src="./Images/simpleVsCompound.png" alt = "simple versus compound interest" width = 50%>
+    <p class = "info">
+        The formula for calculating total amount on a value being charged compound interest is <b>F = P(1 + i)<sup>n</sup></b> where F
+        represents final amount, P represents principal amount, i represents interest rate, and n represents the number of compounding periods. <br><br>
+
+        Speaking of compound interests, there are a couple of very common terms in money math to be aware of: <br>
+    </p>
+    <img src="./Images/8.2terms.png" alt = "compound terms" width = 50%>
+    <p class = "info">
+        Note that this formula should only be used when you are NOT paying back or withdrawing money from the bank throughout the time elapsed. <br><br>
+        Additionally, anything that mentions "future value" refers to finding the value of a lump sum of money at a future time (ie. after 30 years).
+    </p>
+
+    <p class = "header2">
+        Compound Interest: Present Value
+    </p>
+    <p class = "info">
+        Let's say you want to have a certain amount of money in the future, and you need to figure out how much to invest RIGHT NOW.<br><br>
+
+        Use the formula <b>PV = A(1 + i)<sup>-n</sup></b> where PV represents present value, A is the total amount/future value (sometimes this is considered
+        the amount you wish to earn in the future), i represents the interest rate per compounding period and n represents the number of compounding periods. <br><br>
+
+        Note that this formula should only be used when you are NOT investing or withdrawing money from the bank throughout
+        the time elapsed. Additionally, anything that mentions "present value" refers to finding the value of a lump sum of money in the present moment (like... in this <em>present</em> moment). <br><br>
+
+        Also, are you tired of studying and reviewing yet? Well, since you've made it this far, I may as well reward and inspire you with Master Oogway's wisdom (and seeing that we're
+        talking about present and future, this feels fitting):
+    </p>
+    <img src="./Images/masterOogwayQuote.jpg" alt = "Master Oogway's blessed wisdom" width = 50%>
+
+    <p class = "header2">
+        Annuities: Future Value
+    </p>
+    <p class = "info">
+        Annuities refers to a series of payments or investments made at regular intervals. For instance, if you were to invest $100 per month,
+        this is considered an annuity. <br><br>
+
+        Annuities can further be categorized by simple annuities, which refers to annuities in which the payments
+        coincide with the compounding period. They can also be categorized by ordinary annuities, which are annuities in
+        which payments are made at the end of each interval. <br><br>
+
+        The future value of annuity refers to the sum of all the regular payments (not just principal) and interest earned. It can be represented by the formula: <br>
+    </p>
+    <img src="./Images/FVannuities.png" alt = "future value annuities formula" width = 30%>
+    <p class = "info">
+        FV stands for future value, R represents the regular payments/investments each compounding period, i represents the interest rate, and n
+        represents the number of compounding periods.
+    </p>
+
+    <p class = "header2">
+        Annuities: Present Value
+    </p>
+    <p class = "info">
+        Exact same concept as future value annuities! Except now, we're working in the present value. An example situation to use
+        it in, would be calculating how much you need to pay monthly in order to earn a certain amount in the future. The formula for present value is: <br>
+    </p>
+    <img src="./Images/PVannuities.png" alt = "present value annuities formula" width = 30%>
+    <p class = "info">
+        PV stands for present value, R represents the regular payments/investments each compounding period,
+        i represents the interest rate, and n represents the number of compounding periods.
+    </p>
+</div>
+<!-- End of review -->
+
+<div class = "special">
+    <footer>
+        <p>Website made entirely from scratch by Lily Phan :)</p>
+        <p class = "copyright"> Copyright &copy; 2022</p>
+    </footer>
+</div>
+</body>
+
+</html>

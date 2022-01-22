@@ -1,0 +1,49 @@
+
+#grid{
+	margin-top: 7vh;
+	margin-bottom: 0;
+}
+
+#column{
+	display:inline-block;
+	width: 25%;
+	background: #bec0cc;
+	padding: 1em;
+	margin: 1vw;
+	transition:0.5s;
+}
+
+#column:hover{
+	background: #a7a9b5;
+	transition:0.5s;
+	transform: scale(1.1);
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 0;
+    top: 8vh;
+    left: 50vh;
+    transform: translate(-50vh, -2vh);
+    color: #0f2961;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    transition: 0.5s;
+}
+.special{
+    margin-top: 15vh;
+}
+
+.description{
+    margin-top: 9vh;
+    padding-bottom: 0vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size:3vh;
+    padding-right:7vw;
+    padding-left:7vw;
+}
+.backbutton2{
+    position: absolute;
+    transform: translate(-40%, 30%);
+    margin-bottom: 0;
+}

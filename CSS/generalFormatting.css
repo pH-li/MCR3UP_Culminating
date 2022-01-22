@@ -1,0 +1,35 @@
+/* Removes white border on website. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 2.5vh;
+    padding-top: 4.5vh;
+    padding-bottom: 4.5vh;
+    background-color: #d5e3f0;
+    border-top: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.startBody{
+    position: relative;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 2vh;
+    padding-top:1vh;
+    color: #7a7a7a;
+}
+
+.top {
+    margin: 0;
+    height: 3vh;
+    border: none;
+    background-color:#004078;
+}
